@@ -1,0 +1,46 @@
+<?php include('stoixeia.php') ?>
+<!DOCTYPE html>
+<html>
+<head>    
+	<title>Τμήμα Ψηφιακών Συστημάτων</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width , initial scale=1.0"
+</head>
+<body>
+<center>
+		<h1>Στοιχεία Χρήστη</h1>
+		<h2>Εγγραφή</h2>
+		<form action="stoixeia.php" method="post">
+		<?php include('errors.php') ?>
+		<p><table>
+			<tr>
+				<td>Username:</td>
+				<td><input type="text" name="username" required></td>
+			</tr>
+			<tr>
+				<td>Password:</td>
+				<td><input type="password" name="password" required></td>	
+			</tr>
+			<tr>
+				<td>Email:</td>
+				<td><input type="email" name="email" required></td>
+			</tr>
+		</table>
+		<table>
+			<tr>
+				<input type="radio" name="Ιδιότητα">Φοιτητής/τρια
+				<input type="radio" name="Ιδιότητα">Καθηγητής/τρια
+			</tr>	
+		</table>
+			<tr>
+				<button type="submit"> Submit </button> 
+				<a href="login.html"></a>
+			</tr>
+		<table>
+			<tr>
+				<p><u><a href="login.html">Έχεις είδη λογαριασμό πάτα εδώ</a></u></p>
+			</tr>
+		</table></p>
+</center>
+</body>
+</html>
